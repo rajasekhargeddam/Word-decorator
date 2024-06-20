@@ -12,14 +12,14 @@ body{
     height: 95%;
     width: 200vb;
     margin: auto;
-    border: 5px solid rgb(207, 30, 30);
+    border: 5px solid black;
     display: flex;
     flex-direction: column;
 }
 
 .title{
     width: 100%;
-    border-bottom: 5px solid rgb(207, 30, 30);
+    border-bottom: 5px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,12 +41,12 @@ body{
 .controls{
     width: 50%;
     height: 100%;
-    border-right: 5px solid rgb(207, 30, 30);
+    border-right: 5px solid black;
 }
 
 .input{
     height: 20%;
-    border-bottom: 5px solid rgb(207, 30, 30);
+    border-bottom: 5px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +75,7 @@ body{
 }
 
 .fonts {
-    border-top: 5px solid rgb(207, 30, 30);
+    border-top: 5px solid black;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
