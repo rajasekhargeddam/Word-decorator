@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word decorator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- title -->
+        <div class="title">
+            <h1>WORD DECORATOR</h1>
+        </div>
+
+        
+        <div class="content">
+            <div class="controls">
+                <!-- input div -->
+                 <Div class="input">
+                    <div class="input-div">
+                        <input class="forn-control" id="word" type="text">
+                        <input onclick="disply()" id="display" type="button" value="disply" class="btn btn-outline-success">
+                    </div>
+                 </Div>
+
+                 <div class="col-font">
+                 <!-- below div used to apply colors -->
+                    <Div class="colors">
+                        <span class="color-title">
+                            <h3>Colors</h3>
+                        </span>
+                        <div class="color-cont">
+                            <div class="colors-normal">
+                                
+                                <button type="button" class="btn btn-primary" onclick="blue()">Blue</button>
+                                <button type="button" class="btn btn-secondary" onclick="gray()">Gray</button>
+                                <button type="button" class="btn btn-success" onclick="green()">Green</button>
+                                <button type="button" class="btn btn-danger" onclick="red()">Red</button>
+                                <button type="button" class="btn btn-warning" onclick="yellow()">Yellow</button>
+                                <button type="button" class="btn btn-info" onclick="skyblue()">Sky Blue</button>
+                                <button type="button" class="btn btn-light" onclick="white()">White</button>
+                                <button type="button" class="btn btn-dark" onclick="black()">Black</button>
+                                
+                            </div>
+                            <div class="colors-codes">
+                                <input type="text" id="customcolor" placeholder="Enter color code" class="form-control">
+                                <button onclick="apply()" class="btn btn-outline-success">Apply</button>
+                            </div>
+                        </div>
+                    </Div>
+
+                    <!-- below div used to apply fonts -->
+                    <Div class="fonts">
+                        <h3>Fonts</h3>
+                        <button onclick="bold()" type="button" class="btn btn-outline-dark">Bold</button>
+                        <button onclick="italic()" type="button" class="btn btn-outline-dark">Italic</button>
+                        <button onclick="arial()" type="button" class="btn btn-outline-dark">Arial</button>
+                    </Div>
+                </div>
+            </div>
+            <div class="out-put">
+                <span id="output"></span>
+                <button type="button" onclick="erase()" class="btn btn-danger close">Erase</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
